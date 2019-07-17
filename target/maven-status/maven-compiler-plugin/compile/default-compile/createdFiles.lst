@@ -1,0 +1,6 @@
+com\automation\baseclasses\BasePage.class
+com\automation\util\ConfigFileReader.class
+com\automation\util\readLocationInfoExcel.class
+com\automation\util\writeLocationInfoToExcel.class
+com\automation\scripts\PageObjects.class
+com\automation\scripts\startApp.class
