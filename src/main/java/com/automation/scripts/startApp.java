@@ -12,7 +12,10 @@ public class startApp {
 		ConfigFileReader configFileReader=new ConfigFileReader();
 		
 		WebDriver driver;
-		driver = BasePage.loadBrowser();
+		//driver = BasePage.loadBrowser();
+		Singleton instanceDriver = Singleton.getInstance();
+		driver = instanceDriver.loadBrowser();
+		
 		driver.get(configFileReader.getApplicationUrl());
 		driver.manage().window().maximize();
 		
